@@ -58,7 +58,7 @@ const customAnimation1 = keyframes`
                             </Fade>
                             
                             <div id="image">
-                                <img src={require(process.env.PUBLIC_URL + '../images/homeFiller.png')}/>
+                                <img src={require("../assets/homeFiller.png")}/>
                             </div>
                         </div>
                     </div>
