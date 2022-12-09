@@ -9,7 +9,7 @@ const About = () => {
                 </h1>
                 <div id="meImg">
                     <div id="meImgPic">
-                        <img src="./" />
+                        <img src={require("../assets/aboutMe.png")} />
                     </div>
                     <div id="meImgText">
                         <p>My name is BLASETORTOISE284, and I was born and raised in REDACTED! I am currently studying Computer Science on the design track at Brown University in Providence, Rhode Island, and I’ve explored dance, public health, chemistry, biology, programming, and, most recently, user interaction and user experience design.</p>

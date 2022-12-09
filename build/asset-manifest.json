@@ -1,15 +1,42 @@
 {
   "files": {
     "main.css": "/static/css/main.3bbf139e.css",
-    "main.js": "/static/js/main.82b280ad.js",
+    "main.js": "/static/js/main.66605468.js",
+    "static/media/rr-card.png": "/static/media/rr-card.bd3147d8345ac9b8368d.png",
+    "static/media/rr-redesign.gif": "/static/media/rr-redesign.630c19302947e83f2a0e.gif",
+    "static/media/rr-lofi.jpg": "/static/media/rr-lofi.e552b88c9a1ffaaab2cc.jpg",
+    "static/media/redesign.png": "/static/media/redesign.4daae362e7d58591cc04.png",
+    "static/media/rr-hifi1.png": "/static/media/rr-hifi1.6977e8647551404e0932.png",
+    "static/media/homepage.gif": "/static/media/homepage.1c96161009bca0852c87.gif",
+    "static/media/rr-styleguide.jpg": "/static/media/rr-styleguide.ccff5f5b85b6b43d8963.jpg",
+    "static/media/torontoOrg.png": "/static/media/torontoOrg.3a176338f9d715132fb2.png",
+    "static/media/aboutMe.png": "/static/media/aboutMe.6bff2537692deb88a169.png",
+    "static/media/footerFiller.png": "/static/media/footerFiller.6bff2537692deb88a169.png",
     "static/media/homeFiller.png": "/static/media/homeFiller.6bff2537692deb88a169.png",
+    "static/media/rr-hifi2.png": "/static/media/rr-hifi2.0c52acf6cdb99316a3c6.png",
+    "static/media/inspect.gif": "/static/media/inspect.88aa505917af0d9d9724.gif",
+    "static/media/rr-overlay.png": "/static/media/rr-overlay.668b649a7305f97f4119.png",
+    "static/media/dev.png": "/static/media/dev.bafff7d8fa1fa29c3a8d.png",
+    "static/media/sketch_3.png": "/static/media/sketch_3.dc15b88075b24443afcd.png",
+    "static/media/id-prototype.png": "/static/media/id-prototype.4535d7eb95df3cd8b709.png",
+    "static/media/ir-4.png": "/static/media/ir-4.3e53e03fc1ecacd048d3.png",
+    "static/media/sketch_4.png": "/static/media/sketch_4.bf93e63677445c6fd6de.png",
+    "static/media/sketch_2.png": "/static/media/sketch_2.1c5cd0c871df670449d5.png",
+    "static/media/sketch_1.png": "/static/media/sketch_1.b2b7f0963dc2bb68e05a.png",
+    "static/media/personas.jpg": "/static/media/personas.dfa694888026c5fd33c1.jpg",
+    "static/media/id-lofi.png": "/static/media/id-lofi.169224f2ac26485877a5.png",
+    "static/media/storyboard.jpg": "/static/media/storyboard.46756ed48c16f2c50278.jpg",
+    "static/media/computer.jpg": "/static/media/computer.1876329f802c8a3f9d23.jpg",
+    "static/media/pp.png": "/static/media/pp.ea3e74dc41b672033bfe.png",
+    "static/media/printer.jpg": "/static/media/printer.ffa8d6118bb91b43eba8.jpg",
+    "static/media/stationFull.jpg": "/static/media/stationFull.d6265fdaf70c78672d22.jpg",
     "index.html": "/index.html",
     "static/media/noise.svg": "/static/media/noise.bec1c458a59ee47b749d.svg",
     "main.3bbf139e.css.map": "/static/css/main.3bbf139e.css.map",
-    "main.82b280ad.js.map": "/static/js/main.82b280ad.js.map"
+    "main.66605468.js.map": "/static/js/main.66605468.js.map"
   },
   "entrypoints": [
     "static/css/main.3bbf139e.css",
-    "static/js/main.82b280ad.js"
+    "static/js/main.66605468.js"
   ]
 }

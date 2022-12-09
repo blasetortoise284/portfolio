@@ -85,7 +85,7 @@ const customAnimation1 = keyframes`
                         <Fade triggerOnce={true} direction="left" duration="2000">
                             <LinkContainer to="/responsive-redesign">
                                 <div left className="displayCard">
-                                    <img className="ind-img" src={process.env.PUBLIC_URL + '../images/rr-card.png'} />
+                                    <img className="ind-img" src={require("../assets/rr-card.png")} />
                                     <div className="overlay">
                                         <div className="cardBody">
                                             <h3>Toronto Cupcake</h3>
@@ -101,7 +101,7 @@ const customAnimation1 = keyframes`
                         <Fade triggerOnce={true} direction="right" duration="2000">
                             <LinkContainer to="/iterative-design">
                                 <div className="displayCard">
-                                    <img className="ind-img" src={process.env.PUBLIC_URL + '../images/ir-4.png'} />
+                                    <img className="ind-img" src={require("../assets/ir-4.png")} />
                                     <div className="overlay">
                                         <div className="cardBody">
                                             <h3>Slingshot Mobile</h3>
@@ -125,7 +125,7 @@ const customAnimation1 = keyframes`
                         <Fade triggerOnce={true} direction="left" duration="2000">
                             <LinkContainer to="/personas">
                                 <div className="displayCard">
-                                    <img className="ind-img" src={process.env.PUBLIC_URL + '../images/pp.png'}/>
+                                    <img className="ind-img" src={require("../assets/pp.png")}/>
                                     <div className="overlay">
                                         <div className="cardBody">
                                             <h3>MyPrint Printer Release Stations</h3>
@@ -143,7 +143,7 @@ const customAnimation1 = keyframes`
                         <Fade triggerOnce={true} direction="right" duration="2000">
                             <LinkContainer to="/development">
                                 <div className="displayCard">
-                                    <img className="ind-img" src={process.env.PUBLIC_URL + '../images/dev.png'} />
+                                    <img className="ind-img" src={require("../assets/dev.png")} />
                                     <div className="overlay">
                                         <div className="cardBody">
                                             <h3>My Shoe Collection as a Store</h3>

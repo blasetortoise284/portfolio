@@ -6,7 +6,7 @@ function UncontrolledExample() {
             <Carousel.Item className="carouselCardBg">
                 <img
                     className="d-block w-100"
-                    src={process.env.PUBLIC_URL + '../images/sketch_1.png'}
+                    src={require("../assets/sketch_1.png")}
                 />
                 <Carousel.Caption className="carouselCardText">
                     <h3>Team Member 1</h3>
@@ -16,7 +16,7 @@ function UncontrolledExample() {
             <Carousel.Item className="carouselCardBg">
                 <img
                     className="d-block w-100"
-                    src={process.env.PUBLIC_URL + '../images/sketch_2.png'}
+                    src={require("../assets/sketch_2.png")}
                 />
                 <Carousel.Caption className="carouselCardText">
                     <h3>Team Member 2</h3>
@@ -26,7 +26,7 @@ function UncontrolledExample() {
             <Carousel.Item className="carouselCardBg">
                 <img
                     className="d-block w-100"
-                    src={process.env.PUBLIC_URL + '../images/sketch_3.png'}
+                    src={require("../assets/sketch_3.png")}
                 />
                 <Carousel.Caption className="carouselCardText">
                     <h3>Team Member 3</h3>
@@ -36,7 +36,7 @@ function UncontrolledExample() {
             <Carousel.Item className="carouselCardBg">
                 <img
                     className="d-block w-100"
-                    src={process.env.PUBLIC_URL + '../images/sketch_4.png'}
+                    src={require("../assets/sketch_4.png")}
                 />
                 <Carousel.Caption className="carouselCardText">
                     <h3>Team Member 4</h3>

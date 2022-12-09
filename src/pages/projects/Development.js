@@ -16,7 +16,7 @@ const Development = () => {
   }
 `;
     return (
-        <section id="Development" data-scroll-section>
+        <section id="Development">
             <div className="section">
                 <Fade keyframes={customAnimation} direction="up" triggerOnce={true}>
 

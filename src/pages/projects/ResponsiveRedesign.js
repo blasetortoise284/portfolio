@@ -29,10 +29,10 @@ const ResponsiveRedesign = () => {
                                 <div id="rr-intro">
                                     <div className="rr-outer">
                                         <div className="rr-bg">
-                                            <img src={process.env.PUBLIC_URL + '../images/rr-redesign.gif'} />
+                                            <img src={require("../../assets/rr-redesign.gif")} />
                                         </div>
                                         <div className="rr-overlay">
-                                            <img src={process.env.PUBLIC_URL + '../images/rr-overlay.png'} />
+                                            <img src={require("../../assets/rr-overlay.png")} />
                                         </div>
                                     </div>
                                     <div className="subtitle">
@@ -54,7 +54,7 @@ const ResponsiveRedesign = () => {
 
                             <div className="projEmbedPic">
                                 <div id="rr-refPic">
-                                    <img className="ind-img" src={process.env.PUBLIC_URL + '../images/torontoOrg.png'} />
+                                    <img className="ind-img" src={require("../../assets/torontoOrg.png")} />
                                     <div className="subtitle">
                                         <a className="subtitle" target="_blank" href="https://www.torontocupcake.com">Toronto Cupcake's Homepage</a>
                                     </div>
@@ -77,14 +77,14 @@ const ResponsiveRedesign = () => {
                             <div className="projEmbedPic">
                                 <div className="two-img">
                                     <div className="two-img-spacing">
-                                        <img className="ind-img" src={process.env.PUBLIC_URL + '../images/homepage.gif'} />
+                                        <img className="ind-img" src={require("../../assets/homepage.gif")} />
                                         <div className="subtitle">
                                             <subtitle>Navigation bar disappears as you scroll down, cluttering of footer information and minimal information hierarchy. </subtitle>
                                         </div>
 
                                     </div>
                                     <div className="two-img-spacing">
-                                        <img className="ind-img" src={process.env.PUBLIC_URL + '../images/inspect.gif'} />
+                                        <img className="ind-img" src={require("../../assets/inspect.gif")} />
                                         <div className="subtitle">
                                             <subtitle>Inconsistencies in the spacing (margins) of the homepage information containers.</subtitle>
                                         </div>
@@ -118,7 +118,7 @@ const ResponsiveRedesign = () => {
 
                             <div className="projEmbedPic">
                                 <div id="rr-lofi">
-                                    <img className="ind-img" src={process.env.PUBLIC_URL + '../images/rr-lofi.png'} />
+                                    <img className="ind-img" src={require("../../assets/rr-lofi.jpg")} />
                                     <div className="subtitle">
                                         <subtitle>Homepage Lo-Fi wireframes created in Balsamiq across three device screen types.</subtitle>
                                     </div>
@@ -133,7 +133,7 @@ const ResponsiveRedesign = () => {
                             <p>Before starting on my hi-fi prototype, I created a visual design style guide in Figma that consists of the main page colors, font families and typography, as well as reusable elements like buttons, anchor links, and icons used throughout the page. I extended upon the current color scheme of the website, introduced more discrete text hierarchies, and explored a variety of interactive components to include on the page:</p>
                             <div className="projEmbedPic">
                                 <div id="rr-style">
-                                    <img className="ind-img" src={process.env.PUBLIC_URL + '../images/rr-styleguide.jpg'} />
+                                    <img className="ind-img" src={require("../../assets/rr-styleguide.jpg")} />
                                     <div className="subtitle">
                                         <subtitle>Visual style guide created in Figma.</subtitle>
                                     </div>
@@ -150,10 +150,10 @@ const ResponsiveRedesign = () => {
                                 <div id="rr-hifi">
                                     <div className="two-img" style={{ gap: "0rem" }}>
                                         <div>
-                                            <img className="ind-img" src={process.env.PUBLIC_URL + '../images/rr-hifi1.png'} />
+                                            <img className="ind-img" src={require("../../assets/rr-hifi1.png")} />
                                         </div>
                                         <div>
-                                            <img className="ind-img" src={process.env.PUBLIC_URL + '../images/rr-hifi2.png'} />
+                                            <img className="ind-img" src={require("../../assets/rr-hifi2.png")} />
                                         </div>
                                     </div>
                                     <div className="subtitle">
@@ -172,7 +172,7 @@ const ResponsiveRedesign = () => {
                             <p>After annotating my prototypes and finalizing my style guide, I used HTML, CSS, and Bootstrap to implement my redesign of the live site as shown in the header, as well as below here (desktop versions). I deployed my page through GitHub Pages: </p>
                             <div className="projEmbedPic">
                                 <div id="rr-demo">
-                                    <img className="ind-img" src={process.env.PUBLIC_URL + '../images/redesign.png'} />
+                                    <img className="ind-img" src={require("../../assets/redesign.png")} />
                                     <div className="subtitle">
                                         <a href="https://blasetortoise284.github.io/responsive_redesign/">My redesign of Toronto Cupcake</a>
                                     </div>

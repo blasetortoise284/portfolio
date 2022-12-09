@@ -27,8 +27,7 @@ const Personas = () => {
 
                         <div className="projEmbedPic">
                         <div>
-                            <img className="ind-img" 
-                            src={process.env.PUBLIC_URL + '../images/stationFull.jpg'} />
+                            <img className="ind-img" src={require("../../assets/stationFull.jpg")}/>
                             <div className="subtitle">
                                 <subtitle>A Figma mock-up of the general Print Release Station set-up on campus. The computer with the software is connected to a nearby printer, enabling direct printing in a local manner.</subtitle>
                             </div>
@@ -45,7 +44,7 @@ const Personas = () => {
 
                         <div className="projEmbedPic">
                         <div>
-                            <img className="ind-img" src={process.env.PUBLIC_URL + '../images/computer.jpg'} />
+                            <img className="ind-img" src={require("../../assets/computer.jpg")} />
                             <div className="subtitle">
                                 <subtitle>A Figma mock-up of the Print Release Station software interface and features, which attempts to streamline the process of printing on campus for students.</subtitle>
                             </div>
@@ -55,7 +54,7 @@ const Personas = () => {
 
                         <div className="projEmbedPic">
                         <div>
-                            <img className="ind-img" src={process.env.PUBLIC_URL + '../images/printer.jpg'} />
+                            <img className="ind-img" src={require("../../assets/printer.jpg")} />
                             <div className="subtitle">
                                 <subtitle>A Figma mock-up of the printer that is connected to the computer of the Print Release Station. </subtitle>
                             </div>
@@ -132,7 +131,7 @@ const Personas = () => {
                         </div>
                         <div className="projEmbedPic">
                         <div>
-                            <img className="ind-img" src={process.env.PUBLIC_URL + '../images/personas.jpg'} />
+                            <img className="ind-img" src={require("../../assets/personas.jpg")} />
                         </div>
                         </div>
                         
@@ -142,7 +141,7 @@ const Personas = () => {
                         <p>For my storyboard, I chose to go through Soonyoung's journey and his first time printing on campus. I highlighted multiple points from the time he walked into the library to when he rushed off to class with his printed materials:</p>
                         <div className="projEmbedPic">
                         <div>
-                            <img className="ind-img" src={process.env.PUBLIC_URL + '../images/storyboard.jpg'} />
+                            <img className="ind-img" src={require("../../assets/storyboard.jpg")} />
                             <div className="subtitle">
                                 <subtitle>A storyboard of Soonyoung's journey with using the Print Release Station for the first time.</subtitle>
                             </div>

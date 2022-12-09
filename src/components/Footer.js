@@ -23,7 +23,7 @@ const Footer = () => {
                 <Fade>
                     <div id="footerImg">
                         <Link to="/">
-                            <img src={process.env.PUBLIC_URL + '../images/footerFiller.png'} />
+                            <img src={require("../assets/footerFiller.png")} />
                         </Link>
                         <p>thanks for stopping by 𐊮:</p>
                     </div>

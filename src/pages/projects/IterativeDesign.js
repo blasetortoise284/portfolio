@@ -15,9 +15,8 @@ const IterativeDesign = () => {
     transform: translate3d(0, 0, 0);
   }
 `;
-    const images = ["../images/sketch_1.png", "../images/sketch_2.png", "../images/sketch_3.png", "../images/sketch_4.png"];
     return (
-        <section id="IterativeDesign" data-scroll-section>
+        <section id="IterativeDesign">
             <div className="section">
                 <Fade keyframes={customAnimation} direction="up" triggerOnce={true}>
                     <div className="projSect">
@@ -28,7 +27,7 @@ const IterativeDesign = () => {
                         <div className="projEmbedPic">
                             <div className="id-intro">
                                 <img className="ind-img" 
-                                src={process.env.PUBLIC_URL + '../images/id-prototype.png'} />
+                                src={require("../../assets/id-prototype.png")} />
                                 <div className="subtitle">
                                     <subtitle>The homepage of our mobile prototype</subtitle>
                                 </div>
@@ -101,7 +100,7 @@ const IterativeDesign = () => {
                             <p>After we finished our rough sketches, we incorporated our sketches (overlapping and separate) with additional features we felt were also relevant to Slingshot’s mission into one set of wireframes with 4 different screens: a “Home” page, a “Bills” page, a “Trends” page, and a “Resources” page:</p>
                             <div className="projEmbedPic">
                                 <div>
-                                    <img className="ind-img" src={process.env.PUBLIC_URL + '../images/id-lofi.png'}/>
+                                    <img className="ind-img" src={require("../../assets/id-lofi.png")}/>
                                     <div className="subtitle">
                                         <subtitle>Our lo-fi wireframes generated in Figma</subtitle>
                                     </div>
