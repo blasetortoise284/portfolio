@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.21484a27.css",
-    "main.js": "/portfolio/static/js/main.73f92354.js",
+    "main.js": "/portfolio/static/js/main.de832abb.js",
     "static/media/rr-card.png": "/portfolio/static/media/rr-card.bd3147d8345ac9b8368d.png",
     "static/media/rr-redesign.gif": "/portfolio/static/media/rr-redesign.630c19302947e83f2a0e.gif",
     "static/media/rr-lofi.jpg": "/portfolio/static/media/rr-lofi.e552b88c9a1ffaaab2cc.jpg",
@@ -33,10 +33,10 @@
     "index.html": "/portfolio/index.html",
     "static/media/noise.svg": "/portfolio/static/media/noise.bec1c458a59ee47b749d.svg",
     "main.21484a27.css.map": "/portfolio/static/css/main.21484a27.css.map",
-    "main.73f92354.js.map": "/portfolio/static/js/main.73f92354.js.map"
+    "main.de832abb.js.map": "/portfolio/static/js/main.de832abb.js.map"
   },
   "entrypoints": [
     "static/css/main.21484a27.css",
-    "static/js/main.73f92354.js"
+    "static/js/main.de832abb.js"
   ]
 }
