@@ -31,8 +31,8 @@ const ResponsiveRedesign = () => {
                                         <div className="rr-bg">
                                             <img src={require("../../assets/rr-redesign.gif")} />
                                         </div>
-                                        <div className="rr-overlay">
-                                            <img src={require("../../assets/rr-overlay.png")} />
+                                        <div>
+                                            <img className="rr-overlay" src={require("../../assets/rr-overlay.png")} />
                                         </div>
                                     </div>
                                     <div className="subtitle">
