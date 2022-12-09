@@ -1,0 +1,117 @@
+.projSect {
+    margin: 0rem 0rem 5rem 0rem;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 1rem;
+}
+.id-intro {
+    text-align: center;
+}
+
+.id-intro img {
+    
+    width: 50%;
+}
+
+.rr-bg {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    width: 100%;
+}
+
+.rr-bg img {
+    width: 80%;
+}
+
+.rr-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.rr-outer {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+}
+
+#rr-intro {
+    width: 100%;
+}
+
+.projEmbedPic {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 10rem 0.25rem 10rem;
+}
+
+.two-img {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    gap: 2rem;
+}
+
+.two-img-spacing {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#rr-overlay {
+    position: absolute;
+    right: 23rem;
+    height: 100%;
+}
+
+#rr-refPic {
+    width: 80%;
+}
+
+#rr-lofi {
+    width: 80%;
+}
+
+#rr-style {
+    width: 80%;
+}
+
+#rr-hifi {
+    width: 100%;
+}
+
+#rr-demo {
+    width: 85%;
+}
+
+#rr-main {
+    width: 100%;
+    justify-content: flex-end;
+    width: 75%;
+}
+
+.headingSub {
+    margin: 1rem 0rem;
+    opacity: 60%;
+}
+
+.subsection {
+    padding: 0.72rem 0rem 2rem 0rem;
+}
+
+.subsection-end {
+    padding: 0.75rem 0rem 0rem 0rem;
+}
+
+@media only screen and (max-width: 992px) {
+    .projEmbedPic {
+        padding: 1rem 4rem 0.25rem 4rem;
+    }
+
+}
