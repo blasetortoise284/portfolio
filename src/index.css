@@ -1,3 +1,38 @@
+/* set border-box (so that css uses a 
+more reasonable box model, and so it’s 
+like every other platform) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* get rid of default margins which 
+  vary depending on browser anyway, just 
+  set it yourself later*/
+* {
+  margin: 0;
+}
+
+/* media elements are replaced elements 
+  which have a width based on the media, 
+  so we prevent it from expanding beyond 
+  its container, and take up a row */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* make tables look like spreadsheets 
+  and less like a spaced-out grid */
+table {
+  border-collapse: collapse;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
