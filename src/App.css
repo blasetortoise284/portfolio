@@ -2,12 +2,18 @@
   text-align: center;
 }
 
-a{
-  color:black;
+:root {
+  scroll-behavior: auto !important;
 }
 
-a:hover{
-  color:rgb(231, 23, 193);
+a {
+  font-weight: 500;
+  color: rgb(46, 43, 43);
+  transition: 0.25s
+}
+
+a:hover {
+  color: rgb(231, 23, 193);
 }
 
 body {
@@ -17,14 +23,366 @@ body {
     url('noise.svg');
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: hsl(240, 3%, 19%);
+  font-family: 'Syne', serif;
+}
+
+p,
+sub,
+h6,
+a {
+  color: hsl(240, 3%, 19%);
+  font-family: 'Roboto Mono', monospace;
+}
+
+#Introduction h1 {
+  font-size: 3.25vw;
+  font-weight: 700;
+}
+
+#featuredText h1 {
+  font-size: 3.25vw;
+  font-weight: 700;
+}
+
+#Nav h1 {
+  font-family: 'Syne', serif;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+#Sidelogo h1 {
+  font-family: 'Syne', serif;
+  font-size: 2.25vw;
+  font-weight: 700;
+}
+
+#About h1 {
+  font-family: 'Syne', serif;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+#Work h1 {
+  font-family: 'Syne', serif;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+#Resume h1 {
+  font-family: 'Syne', serif;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+#Play h1 {
+  font-family: 'Syne', serif;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+#Contact h1 {
+  font-family: 'Syne', serif;
+  font-size: 3vw;
+  font-weight: 700;
+}
+
+#meImgText p {
+  font-size: 1.05vw;
+}
+
+#About h6 {
+  font-family: 'Roboto', serif;
+  font-size: 1.5vw;
+  letter-spacing: .15vw;
+  font-weight: 800;
+}
+
+#footerNav h1 {
+  font-size: 1.8vw;
+  font-weight: 800;
+}
+
+#footerCon h1 {
+  font-size: 1.8vw;
+  font-weight: 800;
+}
+
+
+.navHeading {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.3vw;
+  font-weight: 500;
+}
+
+.navText {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1vw;
+  font-weight: 400;
+}
+
+.navText.active {
+  background-color: rgb(217, 39, 146) !important;
+}
+
+.navText:active {
+  background-color: rgb(217, 39, 146) !important;
+}
+
+.navText:hover {
+  color: rgb(46, 43, 43);
+  background-color: rgba(255, 106, 195, 0.79) !important;
+}
+
+.footText {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1.1vw;
+  font-weight: 400;
+}
+
+#featuredText p {
+  font-size: 1.25vw;
+}
+
+#Introduction h2 {
+  font-size: 2.75vw;
+  font-weight: 600;
+}
+
+#Introduction h3 {
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+#Introduction h4 {
+  font-size: 1.75vw;
+  font-weight: 400;
+}
+
+#Introduction h5 {
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+#Introduction p {
+  font-size: 1.25vw;
+}
+
+#Introduction sub {
+  font-size: 1.25vw;
+}
+
+.displayCard p {
+  letter-spacing: .1vw;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1vw;
+  color: rgb(217, 227, 219);
+}
+
+#meImgTextBottom p {
+  font-size: 1.05vw;
+}
+
+.displayCard h6 {
+  font-size: 1.1vw;
+  font-weight: 500;
+  color: rgb(217, 227, 219);
+}
+
+.displayCard h3 {
+  font-size: 1.85vw;
+  color: rgb(217, 227, 219);
+  font-weight: 700;
+}
+
+.displayCard h5 {
+  font-size: 1.4vw;
+  color: rgb(217, 227, 219);
+  font-weight: 600;
+}
+
+
+
+.sidebarnav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.sidebarnavStart {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  width: 100%;
+  transform: translateX(10vw);
+}
+
+.sideEnter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: moveLeft 0.75s ease-in-out;
+}
+
+.sideExit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: moveRight 0.5s ease-in-out;
+}
+
+@keyframes moveLeft {
+  from {
+    transform: translateX(10vw);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(10vw);
+    opacity: 0;
+  }
+}
+
+.sidelogo {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.sidelogoStart {
+  position: absolute;
+  opacity: 0;
+  z-index: 1;
+  width: 100%;
+  transform: translateX(-10vw);
+}
+
+.logoEnter {
+  position: fixed;
+  animation: shiftRight 0.5s ease-in-out;
+}
+
+.logoExit {
+  position: fixed;
+  animation: shiftLeft 0.75s ease-in-out;
+}
+
+@keyframes shiftLeft {
+  from {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+}
+
+@keyframes shiftRight {
+  from {
+    transform: translateX(0vw);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateX(-10vw);
+    opacity: 0;
+  }
+}
+
+.barnav {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  opacity: 0;
+  transform: translateY(-10vw);
+}
+
+.barnavStart {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+
+.navEnter {
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: moveDown 0.6s ease-in-out;
+}
+
+.navExit {
+  position: fixed;
+  top: 0;
+  left: 0;
+  animation: moveUp 0.25s ease-in-out;
+}
+
+#spacer {
+  height: 5.5vw;
+}
+
+@keyframes moveDown {
+  from {
+    transform: translateY(-5vw);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0vw);
+    opacity: 1;
+  }
+}
+
+@keyframes moveUp {
+  from {
+    transform: translateY(0vw);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateY(-10vw);
+    opacity: 0;
+  }
+}
+
+
 html {
-  scroll-padding-top: 1rem;
+  scroll-padding-top: 1vw;
   /* height of sticky header */
+}
+
+.fade-in {
+  opacity: 0;
+  transition: 2s ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
 }
 
 /* Format */
 .section {
-  padding: 4rem 10rem 8rem 10rem;
+  margin: 4vw 15vw 16vw 15vw;
 }
 
 
@@ -35,34 +393,58 @@ html {
 
 
 .display1 {
-  margin: 0rem 0rem 2rem 0rem;
+  margin: 2vw 0vw 2vw 0vw;
   display: grid;
   grid-template-columns: 3fr 2fr;
   grid-auto-rows: 1fr;
-  gap: 2rem;
+  gap: 2vw;
 }
 
 .display2 {
-  margin: 2rem 0rem 0rem 0rem;
+  margin: 2vw 0vw 0vw 0vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 1fr;
-  gap: 2rem;
+  gap: 2vw;
 }
 
 /* Navbar */
 #navCont {
-  margin: 1rem 9.2rem;
+  margin: 0;
+  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
+
+
+
 #Nav {
+  margin: 0;
+  padding: 1.5vw 15vw;
   position: sticky;
   top: 0;
   z-index: 99;
+}
+
+
+
+#Sidebar {
+  width: 10%;
+  margin: 1vw 2.5vw 1vw 1vw;
+  top: 0;
+  position: fixed;
+  right: 0;
+}
+
+#Sidelogo {
+  width: 10%;
+  margin: 1.5vw 1vw 1vw 2vw;
+  top: 0;
+  position: fixed;
+  left: 0;
 }
 
 .NavCollapse {
@@ -71,52 +453,65 @@ html {
   justify-content: flex-end;
 }
 
+
+
+.fix {
+  position: fixed;
+}
+
 /* Footer */
 #Footer {
-  padding: 6rem 10rem 10rem 10rem;
+  margin: 6vw 15vw 8vw 15vw;
+}
+
+#footerBg {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
   width: 100%;
 }
 
 #footerImg {
-  text-align: center;
-  margin: 0rem 2rem 0rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin: 0;
   width: 50%;
 }
 
 #footerBlock {
-  padding: 1rem 0rem 0rem 0rem;
+  padding: 1vw 0vw 0vw 0vw;
   display: flex;
-  justify-content: space-between;
+
 }
-
-
 
 #footerImg img {
   width: 100%;
 }
 
 #footerNav {
-  margin: 0rem 3rem 0rem 3rem;
+  margin: 0vw 3vw 0vw 3vw;
   display: flex;
   flex-direction: column;
 }
 
 .anchorLinks {
-  margin: 1rem 0rem 0rem 0rem;
+  margin: 1vw 0vw 0vw 0vw;
   display: grid;
   grid-template-rows: repeat(4, minmax(0, 1fr));
-  gap: 1rem;
+  gap: 1vw;
 }
 
 #footerSect {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 100%;
 }
 
 #footerCon {
-  margin: 0rem 1rem 0rem 3rem;
+  margin: 0vw 1vw 0vw 3vw;
   display: flex;
   flex-direction: column;
 }
@@ -125,7 +520,6 @@ html {
 #intro {
   display: flex;
   flex-direction: column;
-  padding: 4rem 10rem 0rem 10rem;
 }
 
 .custom-btn {
@@ -143,31 +537,32 @@ html {
 }
 
 #image {
+  display: flex;
+  align-items: center;
   text-align: center;
-  width: 30%;
+  width: 60%;
 }
 
 #intro-blurb {
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 70%;
   justify-content: space-between;
 }
 
 #image img {
-  width: 100%;
   transition: 0.5s;
-  border-radius: 1rem;
+  border-radius: 1vw;
 }
 
 #image img:hover {
-  border-radius: 10rem;
+  border-radius: 10vw;
   rotate: 10deg;
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 
 #descImg {
-  margin: 2rem 0rem;
+  margin: 2vw 0vw;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -195,20 +590,22 @@ html {
   width: 100%;
 }
 
+
 .displayCard {
   height: 100%;
   background: white;
   position: relative;
-  border-radius: 1rem;
+  border-radius: 1vw;
   transition: 0.5s;
   background-size: cover;
 }
 
+
 #hobbiesHover {
+  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 75%;
 }
 
 .headerHover {
@@ -221,15 +618,42 @@ html {
 }
 
 #toFeatured {
+  width: 100%;
+  margin: 1vw 0vw 0vw 0vw;
   transition: 0.5s;
-  color:rgba(0, 0, 0, 0.503);
+
+
 }
 
 #toFeatured:hover {
   cursor: pointer;
   transform: scale(1.1);
-  color: rgba(255, 0, 166, 0.756);
 }
+
+
+#Introduction button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 0;
+  background-color: transparent;
+}
+
+#Introduction button:hover svg {
+  margin: 0;
+  cursor: pointer;
+  transform: scale(1.1);
+  stroke: rgba(255, 0, 166, 0.756)
+}
+
+svg {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  stroke: hsl(240, 3%, 19%);
+  transition: 0.5s;
+}
+
 
 .displayCard:hover {
   cursor: pointer;
@@ -240,7 +664,7 @@ html {
 .displayCard img {
   width: 100%;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 1vw;
 }
 
 .reveal {
@@ -260,24 +684,24 @@ html {
   background-image: linear-gradient(to bottom,
       hwb(317 15% 54% / 0) 0%,
       hwb(317 15% 54% / 0.04) 16.36%,
-      hwb(317 15% 54% / 0.115) 33.34%,
-      hwb(317 15% 54% / 0.26) 50.1%,
-      hwb(317 11% 52% / 0.273) 65.75%,
-      hwb(317 11% 52%/ 0.493) 79.43%,
-      hwb(317 11% 52% / 0.744) 90.28%,
-      hwb(317 11% 52% / 0.861) 97.43%,
-      hwb(317 11% 52% / 0.884) 100%);
+      hwb(317 18% 45% / 0.087) 33.34%,
+      hwb(317 15% 54% / 0.177) 50.1%,
+      hwb(317 12% 45% / 0.432) 65.75%,
+      rgba(162, 35, 126, 0.596) 79.43%,
+      hwb(317 14% 34% / 0.815) 90.28%,
+      hwb(317 14% 38% / 0.893) 97.43%,
+      hwb(317 13% 37% / 0.884) 100%);
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100%;
   color: rgb(236, 236, 236);
-  border-radius: 1rem;
-  text-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  border-radius: 1vw;
+  text-shadow: 2px -2px 9px rgb(126, 10, 118);
 }
 
 .cardBody {
-  padding: 0rem 1.5rem 2rem 1.5rem;
+  padding: 0vw 1.5vw 2vw 1.5vw;
   position: fixed;
   bottom: 0;
 }
@@ -292,23 +716,42 @@ html {
   flex-direction: row;
   justify-content: space-between;
 }
+
 #meImgTextBottom {
-  margin: 2rem 0rem 0rem 0rem;
-  text-align:center; 
+  margin: 0.5vw 0vw 0vw 0vw;
+  text-align: center;
 }
 
 #meImgPic {
-  margin: 1rem;
-  width: 30%;
+  margin: 1vw;
+  width: 35%;
 }
 
 #meImgText {
-  margin: 1rem;
-  width: 70%;
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 65%;
+}
+
+.hobbySection {
+  padding: 1vw 0vw 2vw 0vw;
+}
+
+.hobbySectionEnd {
+  padding: 1vw 0vw;
 }
 
 #meImgPic img {
   width: 100%;
+}
+
+#sidebar {
+  margin: 1.5vw 1vw 1vw 1vw;
+  display: grid;
+  grid-template-rows: repeat(4, minmax(0, 1fr));
+  gap: 2vw;
 }
 
 #blurb {}
@@ -327,12 +770,112 @@ html {
 
 }
 
-.carouselCardBg {
-  height: 20rem;
-  background-color: white;
+
+
+
+.star {
+  mix-blend-mode: multiply;
+  z-index: 5;
+  position: absolute;
+  width: 4vw;
+  height: 4vw;
+  left: -24vw;
+  top: -10vw;
+  border-radius: 50%;
+  /* Turns a square into a circle   */
+  animation: bounce 3s linear infinite;
+  animation-delay: 1s;
 }
 
-.carouselCardText {
-  color: rgb(93, 93, 93);
+
+@keyframes bounce {
+  3% {
+    top: -20vw;
+    animation-timing-function: ease-in;
+  }
+
+  22% {
+    top: -4vw;
+    animation-timing-function: ease-out;
+  }
+
+  32% {
+    top: -10vw;
+    animation-timing-function: ease-in;
+  }
+
+  46% {
+    top: -3.2vw;
+    animation-timing-function: ease-out;
+  }
+
+  55% {
+    top: -7vw;
+    animation-timing-function: ease-in;
+  }
+
+  67% {
+    top: -3.2vw;
+    animation-timing-function: ease-out;
+  }
+
+  74% {
+    top: -5vw;
+    animation-timing-function: ease-in;
+  }
+
+  87% {
+    top: 0vw;
+    animation-timing-function: ease-out;
+  }
+
+  100% {
+    left: 100vw;
+    transform: rotate(360deg);
+  }
 }
 
+#StickyTracker {
+  margin: 0;
+  padding: 1.5vw 0vw;
+  z-index: 100;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 3vw;
+}
+
+#trackerCont {
+  margin: 1vw 3.5vw 10vw 3.5vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+#trackerCont button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border: 0;
+  background-color: transparent;
+}
+
+.rotate {
+  rotate: 180deg;
+}
+
+#trackerCont button:hover svg {
+  margin: 0;
+  cursor: pointer;
+  transform: scale(1.1);
+  stroke: rgba(255, 0, 166, 0.756)
+}
+
+svg {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  stroke: hsl(240, 3%, 19%);
+  transition: 0.5s;
+}
