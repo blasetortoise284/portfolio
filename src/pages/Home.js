@@ -1,6 +1,4 @@
-import { React, useState} from 'react';
-import { IconButton } from '@mui/material';
-import KeyboardArrowDownRoundedIcon from '@mui/icons-material/KeyboardArrowDownRounded';
+import { React, useState } from 'react';
 import { LinkContainer } from 'react-router-bootstrap';
 import { Fade } from "react-awesome-reveal";
 import * as Scroll from 'react-scroll';
@@ -21,7 +19,7 @@ const Home = () => {
   }
 `;
 
-const customAnimation1 = keyframes`
+    const customAnimation1 = keyframes`
   from {
     opacity: 0;
     transform: translate3d(-8rem, 0, 0);
@@ -33,58 +31,75 @@ const customAnimation1 = keyframes`
   }
 `;
 
+    const [dancing, setDancing] = useState("");
+
+    const [playing, setPlaying] = useState("");
+
+    const [editing, setEditing] = useState("");
+
+
     return (
         <section id="Home">
             <div id="Introduction">
-                <Fade keyframes={customAnimation} duration="2000" triggerOnce={true}>
-                    <div id="intro">
-                        <div id="desc">
-                            <Fade keyframes={customAnimation1} direction="left" duration="2200" triggerOnce={true}>
-                            <div id="intro-blurb">
-                                <div>
-                                    <h1 id="greetings" onMouseEnter={() => setGreeting("안녕")} onMouseLeave={() => setGreeting("Hey")}>{greeting}! My name is BLASETORTOISE284 𓂃✰</h1>
-                                </div>
-                                <div>
-                                    <p>I'm a hands-on & curious UI/UX designer + front-end developer from REDACTED who's passionate about bringing designs that enhance the human experience to life.</p>
-                                    <p>I particularly enjoy</p>
-                                    <div id="hobbiesHover">
-                                        <h2 className="headerHover">Dancing</h2>
-                                        <h2 className="headerHover">Playing</h2>
-                                        <h2 className="headerHover">Editing</h2>
+                <div className="section">
+                    <Fade keyframes={customAnimation} duration="2000" triggerOnce={true}>
+                        <div id="intro">
+                            <div id="desc">
+                                <Fade keyframes={customAnimation1} direction="left" duration="2200" triggerOnce={true}>
+                                    <div id="intro-blurb">
+                                        <div className="heading1">
+                                            <h1 id="greetings" onMouseEnter={() => setGreeting("안녕")} onMouseLeave={() => setGreeting("Hey")}>{greeting}! My name is BLASETORTOISE284 𓂃✰</h1>
+                                        </div>
+                                        <div>
+                                            <p>I'm a hands-on & curious UI/UX designer + front-end developer from REDACTED who's passionate about bringing designs that enhance the human experience to life.</p>
+                                            <p>I particularly enjoy</p>
+                                            <div id="hobbiesHover">
+                                                <h3 className="headerHover" onMouseEnter={() => setDancing("💃")} onMouseLeave={() => setDancing("")}>DANCING {dancing}</h3>
+                                                <h3 className="headerHover" onMouseEnter={() => setPlaying("🧩")} onMouseLeave={() => setPlaying("")}>PLAYING {playing}</h3>
+                                                <h3 className="headerHover" onMouseEnter={() => setEditing("💻")} onMouseLeave={() => setEditing("")}>EDITING {editing}</h3>
+                                            </div>
+                                            <p>Check out my work below¸.*✧</p>
+                                        </div>
                                     </div>
-                                    <p>Check out my work below¸.*✧</p>
+                                </Fade>
+
+                                <div id="image">
+                                    <img src={require("../assets/homeFiller.png")} />
                                 </div>
-                            </div>
-                            </Fade>
-                            
-                            <div id="image">
-                                <img src={require("../assets/homeFiller.png")}/>
                             </div>
                         </div>
-                    </div>
-                </Fade>
-                <Fade delay="50" keyframes={customAnimation} duration="1800" triggerOnce={true}>
-                        <Link to="Featured" spy={true} smooth={true} duration={2000}>
-                        <IconButton id="toFeatured" disableRipple="true" size="large" style={{ borderRadius: "0", width: "100%", margin: "6rem 0rem 3rem 0rem" }} sx={{ "&:hover": { backgroundColor: "transparent" } }}>
-                            <KeyboardArrowDownRoundedIcon style={{ fontSize: "10rem" }} />
-                            </IconButton>
-                        </Link>
-                
-                </Fade>
+                    </Fade>
+                    <Fade delay="50" keyframes={customAnimation} duration="1800" triggerOnce={true}>
+                        <div id="toFeatured">
+                            <Link to="Featured" spy={true} smooth={true} ignoreCancelEvents={true} duration={1600} offset={-90}>
+                                <button>
+                                    <svg width="150" height="50" viewBox="-5 -5 90 45" preserveAspectRatio="none">
+                                        <path d="M0,0 l35,30 l35,-30" fill="none" strokeWidth="10" />
+                                    </svg>
+                                </button>
+                            </Link>
+
+                        </div>
+
+                    </Fade>
+                </div>
             </div>
 
 
             <div id="Featured">
                 <div className="section">
-                    <Fade triggerOnce={true} direction="up" duration="1200">
-                        <h1>Featured Works</h1>
-                        <p>Some of the things I've been working on.ᐟ.ᐟ</p>
+                    <Fade triggerOnce={true} keyframes={customAnimation} direction="up" duration={1400}>
+                        <div id="featuredText" style={{zIndex: "-10"}}>
+                            <h1>Featured Works</h1>
+                            <p>Someƒof the things I've been working on.ᐟ.ᐟ</p>
+                        </div>
+
                     </Fade>
 
                     <div className="display1">
                         <Fade triggerOnce={true} direction="left" duration="2000">
                             <LinkContainer to="/responsive-redesign">
-                                <div left className="displayCard">
+                                <div className="displayCard">
                                     <img className="ind-img" src={require("../assets/rr-card.png")} />
                                     <div className="overlay">
                                         <div className="cardBody">
@@ -125,7 +140,7 @@ const customAnimation1 = keyframes`
                         <Fade triggerOnce={true} direction="left" duration="2000">
                             <LinkContainer to="/personas">
                                 <div className="displayCard">
-                                    <img className="ind-img" src={require("../assets/pp.png")}/>
+                                    <img className="ind-img" src={require("../assets/pp.png")} />
                                     <div className="overlay">
                                         <div className="cardBody">
                                             <h3>MyPrint Printer Release Stations</h3>

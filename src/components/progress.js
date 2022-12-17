@@ -1,0 +1,16 @@
+import React from 'react';
+import { motion, useScroll } from "framer-motion";
+
+const Progress = (props) => {
+    const scroll = props.scroll
+    const { scrollYProgress } = scroll;
+
+    return (
+        <motion.div
+            className="progress-bar"
+            style={{ scaleX: scrollYProgress }}
+        />
+    );
+}
+
+export default Progress;
